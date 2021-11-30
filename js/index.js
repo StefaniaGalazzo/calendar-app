@@ -1,19 +1,8 @@
 import {render} from "./render.js";
 import { getData, saveData } from "./data.js";
 
-const input = document.querySelector('.inputFilterSearch');
-input.addEventListener('keyup', (event) => {
-    event.preventDefault();
+// console.log("ciao")
 
-    const value = input.value.toLowerCase();  
-
-    const results = data.filter((element) => 
-    element.title.toLowerCase().search(value) > -1
-    ); 
-
-    console.log(results);
-    render(data, results);
-});
 
 
 

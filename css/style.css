@@ -96,8 +96,13 @@ footer{
     padding: 25px;
     margin: 10px;
 
-    background-color: rgba(164, 255, 255, 0.438);
+    background: rgba(164, 255, 255, 0.438);
     border-radius: 15px;
 
+    display: block;
+}
+
+.background{
+    background: black;
 }
 

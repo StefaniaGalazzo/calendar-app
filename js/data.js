@@ -6,7 +6,7 @@ const saveData = (data) => {
 
 //riprendo i dati dal local storage
 const getData = () => {
-    const value = localStorage.getItem("data") || "";
+    const value = localStorage.getItem("data") || "Non ci sono appuntamenti!";
     return JSON.parse(value);
     }
 
