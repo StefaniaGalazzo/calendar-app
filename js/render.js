@@ -61,14 +61,42 @@ const render = (data) => {
             <input type="checkbox" ${item.completed ? "checked" : ""} id ="${item.id}"/>
             </div>` 
         }
-        console.log(item.typeId === 1)
     });
 
-    
-    // >>>>>>> inserire qui data.filter typeID???
-
-
     haircutWrap.innerHTML = items.join('');
+
+
+    const manicureWrap = document.querySelector(".wrapper-manicure");
+    const manicureItems = data.map((manicureItem) =>  {
+        if(manicureItem.typeId === 2){
+            return `<div class="manicureCards">
+            <h3>${manicureItem.title}</h3>
+            <p>Priorità: ${manicureItem.priority}</p>
+            <input type="checkbox" ${manicureItem.completed ? "checked" : ""} id ="${manicureItem.id}"/>
+            </div>`
+        }
+    });
+
+    manicureWrap.innerHTML = manicureItems.join('');
+
+
+    const altroWrap = document.querySelector(".wrapper-altro");
+    const altroItems = data.map((altroItem) =>  {
+        if(altroItem.typeId === 2){
+            return `<div class="altroCards">
+            <h3>${altroItem.title}</h3>
+            <p>Priorità: ${altroItem.priority}</p>
+            <input type="checkbox" ${altroItem.completed ? "checked" : ""} id ="${altroItem.id}"/>
+            </div>`
+        }
+    });
+
+    altroWrap.innerHTML = altroItems.join('');
+    
+
+
+
+
 
     // checkboxe cambia valore al click
     const checkboxes = [...haircutWrap.querySelectorAll('input')];
@@ -77,21 +105,26 @@ const render = (data) => {
         input.addEventListener("click", checkUncheck);
         });
 
+    
+
 
 
     // >>>>>>>>>>>>>  check boxes change background
     checkboxes.forEach((input) => {
+        const divBackground = document.querySelector('.haircutCards');
         input.addEventListener("click", () => {
-            if(items.completed === true){
-                console.log(items)
+            if(items.input.completed === true){
+                divBackground.style.backgroundColor = "blue";
+    //             console.log(items)
             }
+        });
 
-        })
-    })
+    
+    
 
-};
+});
 
-
+}
 
 
 

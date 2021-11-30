@@ -1,6 +1,20 @@
 import {render} from "./render.js";
 import { getData, saveData } from "./data.js";
 
+const input = document.querySelector('.inputFilterSearch');
+input.addEventListener('keyup', (event) => {
+    event.preventDefault();
+
+    const value = input.value.toLowerCase();  
+
+    const results = data.filter((element) => 
+    element.title.toLowerCase().search(value) > -1
+    ); 
+
+    console.log(results);
+    render(data, results);
+});
+
 
 
 // F E T C H  
@@ -17,7 +31,7 @@ import { getData, saveData } from "./data.js";
             // const sortPriority = ((item) => {
             //     item.priority.sort()
             // });
-            console.log(item.typeId)
+            // console.log(item.typeId)
             return item;
         }))
 
