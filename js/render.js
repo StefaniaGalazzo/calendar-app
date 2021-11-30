@@ -15,18 +15,7 @@ const types = [
     }
 ]
 
-// const checkChangeBack = (event) => {
-//     console.log(event.target)
-    // const compl = event.target.completed;
-    // console.log(event.target.completed)
-    // const divBack = document.querySelector('.haircutCards');
-    // const newBackground = getData().map((element) => {
-    //     console.log(compl)
-    //     if(element.completed === true){
-    //        return divBack.style.background = "blue";
-    //     }
-// });
-// }
+
 
 const checkUncheck = (event) => {
     
@@ -65,8 +54,7 @@ const checkBackground = (event) => {
     saveData(newBack);
     render(newBack);
     // console.log(getData()[0].completed);
-};  
-
+}; 
 
 
 const render = (data) => {
@@ -119,7 +107,7 @@ const render = (data) => {
 
     // callback = checkboxe cambia valore al click
     const checkboxes = [...haircutWrap.querySelectorAll('input')];
-    
+
     checkboxes.forEach((input) => {
         input.addEventListener("click", checkUncheck);
         });    
@@ -131,19 +119,5 @@ const render = (data) => {
 }
 
 
-
-
-
-    // function createHaircutCards(parent, typeId, title) {
-    //     const haircut = document.createElement("div");
-    //     haircut.className = "haircut-card";
-        
-    //     parent.appendChild(haircut);
-    // }
-    
-    // const wrapperHaircut = document.querySelector('.wrapper-haircut');
-   
-
-    // createHaircutCards(wrapperHaircut);
 
 export {render}; 

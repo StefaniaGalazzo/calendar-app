@@ -59,6 +59,20 @@ footer{
     text-align: center;
 }
 
+
+button{
+    padding: 5px 10px; 
+    margin: 0 15px;
+    border-radius: 5px;
+    border-color: white;
+    background: white;
+}
+
+input{
+    height: 30px;
+    border-radius: 5px;
+}
+
 /* S E C T I O N S */
 
 .haircut-container, .manicure-container, .altro-container{
@@ -102,7 +116,7 @@ footer{
     display: block;
 }
 
-.background{
-    background: black;
+.priority{
+    margin-right: 80px;
 }
 
