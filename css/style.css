@@ -1,0 +1,67 @@
+/* H A I R C U T  - S E C T I O N */
+
+.haircut-container{
+    border: 1px solid green;
+}
+
+.wrapper-haircut{
+    border: 1px solid red;
+    
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    overflow-x: hidden;
+
+    padding: 50px 0;
+    
+}
+
+.haircutCards{
+    border: 1px solid blue;
+    width: 200px;
+
+    padding: 25px;
+    margin: 10px;
+
+    background-color: #eee;
+}
+
+
+
+/* M A N I C U R E - S E C T I O N */
+.manicure-container{
+    border: 1px solid green;
+}
+
+.wrapper-manicure{
+    border: 1px solid red;
+    
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    overflow-x: hidden;
+
+    padding: 50px 0;
+    
+}
+
+.manicureCards{
+    border: 1px solid blue;
+    width: 200px;
+
+    padding: 25px;
+    margin: 10px;
+
+    background-color: #eee;
+}
+
