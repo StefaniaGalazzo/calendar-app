@@ -57,7 +57,7 @@ const render = (data) => {
         if(item.typeId === 1){
             return     `<div class="haircutCards">
             <h3>${item.title}</h3>
-            <p>Giorno 2, h12.30</p>
+            <p>Priorità: ${item.priority}</p>
             <input type="checkbox" ${item.completed ? "checked" : ""} id ="${item.id}"/>
             </div>` 
         }
