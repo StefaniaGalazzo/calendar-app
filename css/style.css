@@ -1,67 +1,103 @@
-/* H A I R C U T  - S E C T I O N */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 
-.haircut-container{
-    border: 1px solid green;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.wrapper-haircut{
-    border: 1px solid red;
+/* base style */
+body{
+    height: 100vh;
+
+    font-family: 'Roboto', sans-serif;
+    
+    background: linear-gradient(-45deg, #178d87, #304791, #ad2a31, #ccb136 );
+    background-size: 550% 550%;
+    
+    animation: AnimationName 3s ease infinite;
+    animation: gradient 8s ease infinite;
+
+    color: white;
+    
+}
+  /* animation */
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+  /*-------------------------------------*/
+
+header{
+    background-color: #131c3abe;
+    padding: 45px 80px;
+    color: rgb(254, 255, 236);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    /* position: fixed; */
+    background-color: #131c3abe;
+    padding: 45px 80px;
+    color: rgb(254, 255, 236);
+    bottom: 0;
+
+    margin-top: 100px;
+    padding: 50px;
+
+    text-align: center;
+}
+
+/* S E C T I O N S */
+
+.haircut-container, .manicure-container, .altro-container{
+    /* border: 1px solid green; */
+    margin: 100px 80px;
+    padding: 35px;
+
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 20px;
+}
+
+.wrapper-haircut, .wrapper-manicure, .wrapper-altro{
+    /* border: 1px solid red; */
     
     width: 100%;
     height: 400px;
 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
 
-    overflow-x: hidden;
+    overflow-y: hidden;
 
-    padding: 50px 0;
-    
+    margin: 35px auto;
+    padding: 50px 30px;
+
+    background-color: rgba(255, 255, 255, 0.158);
+    border-radius: 20px;
 }
 
-.haircutCards{
-    border: 1px solid blue;
-    width: 200px;
+.haircutCards, .manicureCards, .altroCards{
+    /* border: 1px solid blue; */
+    min-width: 350px;
+    max-width: 400px;
 
     padding: 25px;
     margin: 10px;
 
-    background-color: #eee;
-}
+    background-color: rgba(164, 255, 255, 0.438);
+    border-radius: 15px;
 
-
-
-/* M A N I C U R E - S E C T I O N */
-.manicure-container{
-    border: 1px solid green;
-}
-
-.wrapper-manicure{
-    border: 1px solid red;
-    
-    width: 100%;
-    height: 400px;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    overflow-x: hidden;
-
-    padding: 50px 0;
-    
-}
-
-.manicureCards{
-    border: 1px solid blue;
-    width: 200px;
-
-    padding: 25px;
-    margin: 10px;
-
-    background-color: #eee;
 }
 
