@@ -1,4 +1,0 @@
-// endpoint
-
-
-export{API};
