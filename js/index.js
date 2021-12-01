@@ -1,5 +1,5 @@
 import {render} from "./render.js";
-import { getData, saveData } from "./data.js";
+import {getData, saveData} from "./data.js";
 
 // console.log("ciao")
 
@@ -16,6 +16,7 @@ import { getData, saveData } from "./data.js";
         .then((data) => data.filter((item, index) => index < 30).map((item) => {
             item.typeId = Math.floor(Math.random() * 3) +1;
             item.priority = Math.floor((Math.random() * 4));
+            
             return item;
         }))
 

@@ -13,7 +13,7 @@ body{
     font-family: 'Roboto', sans-serif;
     
     background: linear-gradient(-45deg, #178d87, #304791, #ad2a31, #ccb136 );
-    background-size: 550% 550%;
+    background-size: 600% 600%;
     
     animation: AnimationName 3s ease infinite;
     animation: gradient 8s ease infinite;
@@ -73,6 +73,17 @@ input{
     border-radius: 5px;
 }
 
+h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+    overflow: hidden;
+
+    height: 80px;
+}
+
+p{
+    margin-bottom: 20px;
+}
 /* S E C T I O N S */
 
 .haircut-container, .manicure-container, .altro-container{
@@ -107,13 +118,23 @@ input{
     min-width: 350px;
     max-width: 400px;
 
-    padding: 25px;
+    padding: 55px;
     margin: 10px;
 
     background: rgba(164, 255, 255, 0.438);
     border-radius: 15px;
 
     display: block;
+}
+
+.haircutCardsHighlited {
+    background-color: rgb(39, 39, 182) !important;
+}
+
+
+.inputtt {
+    width: 30px;
+
 }
 
 .priority{
