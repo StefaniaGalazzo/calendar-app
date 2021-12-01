@@ -19,7 +19,7 @@ import {getData, saveData} from "./data.js";
             
             return item;
         }))
-
+        .then((data) => data.sort((a,b) => (a.priority > b.priority) ? 1 : -1).reverse() )
         .then((data) => saveData(data))
         .then(() => {
             render(getData());
