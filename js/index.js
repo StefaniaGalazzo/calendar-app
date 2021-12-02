@@ -5,11 +5,11 @@ import {getData, saveData} from "./data.js";
 
 
     let datas = []
+    const API = "http://jsonplaceholder.typicode.com/todos";
 
 // F E T C H  
     document.addEventListener("DOMContentLoaded" , () => {
   
-        const API = "http://jsonplaceholder.typicode.com/todos";
     
         fetch(API)
         .then((response) => response.json())
