@@ -128,7 +128,20 @@ const render = (data) => {
     // })
 
 
+// // S E A R C H - B A R //
+// const cards = document.getElementsByClassName("wrapper-haircut");
+// const searchBar = document.getElementsByClassName("inputFilterSearch");
+
+// searchBar.addEventListener('keyup', (e) => {
+// console.log(e)
+// })
+
+
 }
+
+
+
+
 
 
 
