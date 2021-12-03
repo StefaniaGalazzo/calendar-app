@@ -1,11 +1,10 @@
 <h1>Calendar App</h1>
 <h2>The calendar app for beauty salon appointments.</h2>
 
-<hr>
 
 <p>A simple app to manage your different appointments</p>
 
-<br>
+<hr><br>
 
 <img src="./img/screenshot.png">
 
