@@ -8,11 +8,12 @@
 
 <img src="./img/screenshot.png">
 
-<hr><br>
+<br><hr><br>
 
+<h2>What can you do with this app?</h2>
 <ul>
-    <li>View appointment on different categories</li>
-    <li>Complete appointments and change the color of the completed appointment card</li>
-    <li>Order the appointment by priority</li>
-    <li>Search appointment with the search-bar by title or priority number</li>
+    <li>View appointments on different categories</li>
+    <li>Complete appointments and change the color of the completed appointments cards</li>
+    <li>Order the appointments by priority</li>
+    <li>Search appointments with the search-bar by title or priority number</li>
 </ul>
