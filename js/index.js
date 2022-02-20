@@ -5,7 +5,7 @@ import {getData, saveData} from "./data.js";
 
 
     let datas = []
-    const API = "http://jsonplaceholder.typicode.com/todos";
+    const API = "https://jsonplaceholder.typicode.com/todos";
 
 // F E T C H  
     document.addEventListener("DOMContentLoaded" , () => {
@@ -57,23 +57,7 @@ priorityBtn.addEventListener('click', (event) => {
             // console.log(filterDatas);
 
             render(filterDatas);
-        //  event.preventDefault();
- 
-        //  const value = input.value.toLowerCase();  
- 
-        //  const results = datas.search((element) => {
- 
-        //  element.title.toLowerCase().search(value) > -1 || 
- 
-        //  element.priority.search(value) > -1 
- 
-        //  ); 
- 
-        //  console.log(element);
- 
-        //  render(results);
- 
-    // });
+ });
 });
 
 
