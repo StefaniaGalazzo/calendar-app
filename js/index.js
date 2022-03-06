@@ -58,7 +58,7 @@ priorityBtn.addEventListener('click', (event) => {
 
             render(filterDatas);
  });
-});
+
 
 
 
